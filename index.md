@@ -15,21 +15,6 @@ hero:
     - theme: brand
       text: 开始
       link: /guide/intro
-    - theme: alt
-      text: 为什么选我们 ?
-      link: /guide/why
-    - theme: alt
-      text: 更新日志
-      link: /guide/changelog
-    - theme: cta buy
-      text: 免费领取 v1 专业版
-      link: /get-v1-pro
-    - theme: cta
-      text: 演示地址：基础版 ↗
-      link: https://fantastic-admin.hurui.me/basic-example
-    - theme: cta
-      text: 演示地址：专业版 ↗
-      link: https://fantastic-admin.hurui.me/pro-example
 
 features:
 - icon: 💪
@@ -57,14 +42,3 @@ features:
   title: 丰富的业务页面
   details: 通过真实场景及真实需求，沉淀出数十个业务应用的静态页面，方便开发人员直接使用
 ---
-
-<script setup>
-import { onMounted } from 'vue'
-import { pureFrontendTag } from './.vitepress/utils/pureFrontendTag'
-import { fetchReleaseTag } from './.vitepress/utils/fetchReleaseTag'
-
-onMounted(() => {
-  pureFrontendTag()
-  fetchReleaseTag()
-})
-</script>
